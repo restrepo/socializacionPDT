@@ -24,9 +24,8 @@
 		.then(response => response.json())
 		.then(data => {
 			console.log(data.faculties[0]) <!-- This is to debug -->
-			document.querySelector("#debug").innerText = username + data.faculties[0].name + " " + data.faculties[0].lastname <!-- Get the name of the selected professor -->
+			document.querySelector("#debug").innerText = '<a href="https://docs.google.com/spreadsheets/u/0/d/18z05Hi_oJQRxYcNrOJBQz8e7vNoT6K23/gviz/tq?tqx=out:html&tq=select+*+where+B=">'+username  
 		})
-		document.querySelector("#debug").innerText = username+'...';
 	</script>
 </body>
 </html>
