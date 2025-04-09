@@ -14,9 +14,12 @@
 
       var sentence = prompt("Identificación:")
       var totalBits = answer(sentence);
-      var div = document.getElementById("print");
-      div.innerHTML = "<a href='https://docs.google.com/spreadsheets/u/0/d/18z05Hi_oJQRxYcNrOJBQz8e7vNoT6K23/gviz/tq?tqx=out:html&tq=select+*+where+B='${sentence}>Evaluación Plan de Trabajo para" 
-        + sentence + "</a>: ${sentence} hola mundo";
+      let link = document.getElementById("print");
+      //var div = document.getElementById("print");
+      //div.innerHTML = "<a href='https://docs.google.com/spreadsheets/u/0/d/18z05Hi_oJQRxYcNrOJBQz8e7vNoT6K23/gviz/tq?tqx=out:html&tq=select+*+where+B='${sentence}>Evaluación Plan de Trabajo para" 
+      //  + sentence + "</a>: ${sentence} hola mundo";
+      link.href = "https://google.com";
+      link.innerText = 'This is Link';
 
     </script>
 
