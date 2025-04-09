@@ -23,7 +23,7 @@
 		fetch("https://google.com")
 		.then(response => response.text())
 		.then(data => {
-			console.log(data.faculties[0]) <!-- This is to debug -->
+			console.log(data) <!-- This is to debug -->
 			document.querySelector("#debug").innerText = data; <!-- Get the name of the selected professor -->
 		})
 	</script>
