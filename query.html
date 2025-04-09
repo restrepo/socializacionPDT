@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title></title>    
+  </head>
+  <body>
+    <div id="print"></div>
+    <script type="text/javascript">
+
+      function answer(sentence) {    
+        var bitsOfString = sentence.split(" ");
+        var numOfBits = bitsOfString.length;
+        return numOfBits;
+      }
+
+      var sentence = prompt("OK, say something!")
+      var totalBits = answer(sentence);
+      var div = document.getElementById("print");
+      div.innerHTML = totalBits;
+
+    </script>
+
+  </body>
+</html>
